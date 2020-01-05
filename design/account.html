@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Back Together</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Khalid Obaide</h1>
+  <p>Libyan School Damai, Ehaalaulome, Herat, Aindasazan, Shah Vali</p> 
+</div>
+
+
+
+<!-- The Add School Modal -->
+<div class="modal fade" id="addNew">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">New School:</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+            <div class="">
+                <form action="/action_page.php" class="was-validated">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="uname" placeholder="Enter School" name="school" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="pwd" placeholder="Enter City" name="city" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="pwd" placeholder="Enter Date" name="date" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Add Now</button>
+                  </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Remove School Modal -->
+<div class="modal fade" id="remove">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Remove School:</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+            <div>
+                Libyan School Damai 
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+            <br>
+            <div>
+                Ehaalaulome 
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+            <br>
+            <div>
+                Shah vali 
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+</div>
+
+
+<!-- Found Friends Modal -->
+<div class="modal fade" id="foundFriends">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Remove School:</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+            <div>
+                Ahmad Aziz
+                <a href="#" class="btn btn-info">Info</a>
+            </div>
+            <br>
+            <div>
+                Karim Moiz 
+                <a href="#" class="btn btn-info">Info</a>
+            </div>
+            <br>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+</div>
+
+
+<!-- The Add Contact Modal -->
+<div class="modal fade" id="addContact">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">New School:</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+            <div class="">
+                <form action="/action_page.php" class="was-validated">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="uname" placeholder="Enter Website Name" name="name" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="pwd" placeholder="Enter Username" name="username" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Add Now</button>
+                  </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <!-- remove contact Modal -->
+<div class="modal fade" id="removeContact">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Remove address:</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+            <div>
+                Gmail
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+            <br>
+            <div>
+                Facebook 
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+            <br>
+            <div>
+                Instagram 
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+            <br>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <h2>Info & Edit:</h2>
+    <div class="text-center">
+        <a href="#" class="btn btn-success" data-toggle="modal" data-target="#addNew">Add New School</a>
+        <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#remove">Remove an School</a>
+        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#foundFriends">Found Friends (2)</a>
+        <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#addContact">Add Contact address</a>
+        <a href="#" class="btn btn-warning text-white" data-toggle="modal" data-target="#removeContact">remove Contact address</a>
+    </div>
+    
+</div>
+<br><br><br><hr>
+<div class="container">
+    <h2>Schools : </h2>
+    <p>you can delete or add new schools form the <code>Info & Edit</code> Section.</p>            
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th>School Name</th>
+          <th>City</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Libyan School Damai</td>
+          <td>Kuala Lumpur</td>
+          <td>2017, 2018, 2019, 2020</td>
+        </tr>
+        <tr>
+          <td>Ehaalaulome</td>
+          <td>Herat</td>
+          <td>2014, 2015, 2016</td>
+        </tr>
+        <tr>
+          <td>Iendasazan</td>
+          <td>Herat</td>
+          <td>2012, 2013, 2014</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+<br><br><br><hr>
+<p class="text-center">Made By <b>Khalid Obaide</b></p>
+</body>
+</html>
+<style>
+
+*{
+    font-family: 'Ubuntu';
+}
+
+</style>
